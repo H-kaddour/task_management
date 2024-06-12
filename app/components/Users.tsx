@@ -16,7 +16,7 @@ async function Users() {
   return (
     <>
       {data.map((user, index) => (
-        <UsersClick user={user} index={index} />
+        <UsersClick key={user.id} user={user} index={index} />
       ))}
     </>
   );

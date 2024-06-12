@@ -24,7 +24,7 @@ async function Tasks({id}: Userid) {
         </div>
       ) : (
       data.map((user, index) => (
-        <div className={(index % 2 === 1) ? styles.highlightUser : ''}>
+        <div key={user.id} className={(index % 2 === 1) ? styles.highlightUser : ''}>
           <div key={user.id} className={styles.userSection}>
             <div className={styles.textBody}>{user.title}</div>
             <div className={styles.textBody}>
